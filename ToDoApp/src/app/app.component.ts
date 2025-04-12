@@ -16,6 +16,7 @@ export class AppComponent {
 
   addtask(){
     this.taskList.push({id:this.taskList.length,desc:this.task});
+     this.task = ''; // Clear input
   }
 
   deletetask(id:number){
