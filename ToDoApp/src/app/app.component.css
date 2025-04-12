@@ -1,0 +1,41 @@
+.todo-app{
+    background-color: #f03ab9;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border: 1px solid black;
+    background-color: #a75eeb; /* Set background color */
+    border-radius: 5px;
+    color: white;
+    margin: 0;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.taskinput{
+    justify-content: center;
+    height: 25px;
+    margin-left: 700px;
+    margin-right: 25px;
+    border-radius: 5%;
+    
+
+
+}
+
+button{
+    border-radius: 10%;
+    height: 25px;
+    background-color: green;
+}
+
+.del{
+    background-color: red;
+}
+

@@ -1,0 +1,17 @@
+<div class="todo-app">
+  <h1 [innerHtml]="title"></h1>
+  
+  <!-- <h2>{{ task }}</h2> -->
+  <input class="taskinput" type="text" [(ngModel)]="task" placeholder="Enter task">
+  <button (click)="addtask()">Add Task</button>
+  
+  
+  @for(task of taskList;track task.id){
+      <ul class="task">
+          <li class="tasklist">{{ task.id+1 }}</li>
+          <li class="tasklist">{{ task.desc }}</li>
+          <li><button class="del" (click)="deletetask(task.id)">Delete Task</button></li>
+      </ul>
+  }
+  
+  </div>
