@@ -1,5 +1,5 @@
 <div class="todo-app">
-  <h1 [innerHtml]="title"></h1>
+  <h1 [innerHtml]="title"></h1> <!--Property Binding -->
   
   <!-- <h2>{{ task }}</h2> -->
   <input class="taskinput" type="text" [(ngModel)]="task" placeholder="Enter task">
@@ -10,7 +10,10 @@
       <ul class="task">
           <li class="tasklist">{{ task.id+1 }}</li>
           <li class="tasklist">{{ task.desc }}</li>
-          <li><button class="del" (click)="deletetask(task.id)">Delete Task</button></li>
+          <div class="button">
+              <li><button class="del" (click)="deletetask(task.id)">Delete Task</button></li>
+              <li><button class="edit" (click)="edittask(task)">Edit Task</button></li>
+          </div>
       </ul>
   }
   
