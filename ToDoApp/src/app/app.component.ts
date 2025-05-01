@@ -14,6 +14,7 @@ export class AppComponent {
   task='';
   taskList:{id:number,desc:string}[]=[];
 
+<<<<<<< HEAD
     // For editing
   isEditing: boolean = false;
   editingTaskId: number | null = null;
@@ -40,6 +41,11 @@ export class AppComponent {
     }
 
     this.task = ''; // Clear input
+=======
+  addtask(){
+    this.taskList.push({id:this.taskList.length,desc:this.task});
+     this.task = ''; // Clear input
+>>>>>>> 7d3a280562a4211797335fbcd17b4133545934cc
   }
 
   deletetask(id:number){
